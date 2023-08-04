@@ -1,0 +1,13 @@
+﻿1. Why is it important that the IReportServiceLifetime class is an Interface?
+Using an interface allows the application code to be decoupled from specific implementations, making it more flexible and easier to maintain. 
+It also promotes loose coupling and better testability, as implementations can be easily replaced without modifying the dependent classes.
+
+2. What are the three types of service lifetimes available for use here? What is the difference between them?
+Transient Lifetime, Scoped Lifetime and Singleton Lifetime.
+Transient lifetime is suitable for scenarios where you need a new independent instance every time.
+Scoped lifetime is suitable for scenarios where you need to share the same instance within the same scope.
+Singleton lifetime is suitable for scenarios where you need global sharing of a single instance throughout the application.
+
+3. Using the above information, what do we expect the lifetime is of an instance of a DbContext class injected into an Endpoint method? Into a seed method? 
+The lifecycle of a DbContext class instance can be Transient or Scoped.
+The lifecycle of DbContext class instance into a seed method should be Transient.
