@@ -55,7 +55,6 @@ namespace ControllersAndViews.Controllers
                 _context.Student.Add(student);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-            
         }
 
         // UPDATE
