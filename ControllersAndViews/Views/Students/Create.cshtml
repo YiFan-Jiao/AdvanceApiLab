@@ -1,0 +1,11 @@
+﻿
+@model ControllersAndViews.Models.ViewModels.CUStudentVM
+
+<form asp-action="Create" method="post">
+    <label asp-for="Student.FullName"></label>
+    <input asp-for="Student.FullName" />
+
+    <select asp-for="SelectedCourseId" asp-items="@Model.SelectItems"></select>
+
+    <input type="submit" value="Add New Student"/>
+</form>
