@@ -55,11 +55,9 @@ namespace ControllersAndViews.Controllers
                 _context.Student.Add(student);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-            
         }
 
         // UPDATE
-
         public IActionResult Edit(Guid? id)
         {
             if (id == null || _context.Student == null || _context.Course == null)
