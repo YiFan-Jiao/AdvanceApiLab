@@ -59,7 +59,6 @@ namespace ControllersAndViews.Controllers
         }
 
         // UPDATE
-
         public IActionResult Edit(Guid? id)
         {
             if (id == null || _context.Student == null || _context.Course == null)
