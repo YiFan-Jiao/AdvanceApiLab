@@ -51,10 +51,10 @@ namespace ControllersAndViews.Controllers
         {
             Student student = vm.Student;
             student.CourseId = vm.SelectedCourseId;
-            
-                _context.Student.Add(student);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
+
+            _context.Student.Add(student);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // UPDATE
@@ -85,11 +85,11 @@ namespace ControllersAndViews.Controllers
             Student student = vm.Student;
             student.CourseId = vm.SelectedCourseId;
 
-            
-                _context.Student.Update(student);
-                _context.SaveChanges();
-                return RedirectToAction("Index");
-            
+
+            _context.Student.Update(student);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+
         }
 
         //delete
