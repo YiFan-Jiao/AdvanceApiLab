@@ -6,7 +6,7 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string CompanyName { get; set; }
-        public int Phone { get; set; }
+        public int Phonexxxxxxxxxxxxxxxxxxxxxx { get; set; }
         public virtual List<Address> Addresses { get; set; }
     }
 }
